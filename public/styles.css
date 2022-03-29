@@ -1,0 +1,188 @@
+:root {
+  /* --primary: 255, 86, 48; */
+  --p: 95, 73, 209;
+  --p-color: rgba(95, 73, 209);
+  --black: rgba(0, 0, 0);
+  --red: rgba(230, 18, 39);
+  --red-c: 230, 18, 39;
+  --orange: rgba(247, 78, 72);
+  --orange-c: 247, 78, 72;
+  --footer-color: rgba(36, 38, 43);
+  --pink: rgba(242, 68, 135);
+  --pink-c: 242, 68, 135;
+  --btn-gradient: linear-gradient(to right, var(--orange), var(--pink));
+  --t-color: #f54a62;
+}
+
+.products {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.product {
+  position: relative;
+}
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+  margin: 40px 10px;
+  width: 18vw;
+  min-height: 45vh;
+  max-height: 45vh;
+  padding: 2rem 1rem;
+  text-align: center;
+  background: #fff;
+  box-shadow: 2px 2px 20px -1px rgba(245, 74, 98, 0.15);
+  cursor: pointer;
+  position: relative;
+  border-radius: 5px;
+}
+.badge{
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    background: var(--p-color);
+    color: #fff;
+    padding: 2px 10px;
+    border-radius: 100px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.container:hover {
+  box-shadow: 0 0 20px 0px rgba(245, 74, 98, 0.25);
+  transform: scale(1.05);
+}
+.imgFruit {
+  width: 10.5rem;
+  height: 8rem;
+  /* margin-top: -35%; */
+  object-fit: contain;
+}
+.details {
+  display: flex;
+  flex-direction: column;
+}
+.name {
+  height: max-content;
+  min-height: 30%;
+  max-height: 80%;
+  overflow: hidden;
+}
+.name h3 {
+  font-size: 0.85rem;
+  letter-spacing: 1.4px;
+  margin-top: 0.4rem;
+  color: var(--black);
+}
+.details .price.fa {
+  font-size: 15px;
+  color: #757575;
+}
+.details .amount {
+  color: var(--pink);
+  font-size: 1.2rem;
+  padding: 0 5px;
+  font-weight: bold;
+}
+.btnContainer {
+  padding: 0 0.4rem;
+  display: flex;
+  justify-content: center;
+}
+.details .buyBtn {
+  margin-top: 0.8rem;
+  border: none;
+  padding: 10px 23px;
+  background: var(--btn-gradient);
+  color: #fff;
+  font-size: 12px;
+  text-transform: uppercase;
+  font-weight: bold;
+  border-radius: 25px;
+  box-shadow: 0px 5px 25px rgba(var(--p), 0.2);
+  border: 2px solid var(--btn-gradient);
+  cursor: pointer;
+  transition: 0.2s all;
+}
+
+.details .buyBtn:hover {
+  background: transparent;
+  color: #333;
+  border: 2px solid var(--pink);
+  box-shadow: var(--pink) 4px 5px 0px;
+}
+@media screen and (min-width: 1100px) {
+  .deatils {
+    position: relative;
+    min-height: 60%;
+  }
+  .deatils .priceBtn {
+    min-height: 40%;
+    margin-bottom: -20%;
+  }
+  .buyBtn {
+    margin-bottom: -30%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    width: 97vw;
+    min-height: auto;
+    max-height: 15vh;
+    flex-direction: row;
+    padding: 4rem 0;
+    margin: 0.55rem 0;
+  }
+  .shareDiv {
+    flex-direction: row;
+    right: 1%;
+  }
+  .priceBtn {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .imgContainer {
+    width: 20%;
+  }
+  .imgFruit {
+    margin-top: 0;
+    object-fit: contain;
+    max-width: 70%;
+    max-height: 80%;
+    width: 7rem;
+    height: 7rem;
+    object-fit: contain;
+  }
+  .details {
+    width: 80%;
+  }
+  .name h3 {
+    padding: 0 0.7rem;
+    text-align: left;
+    font-size: 0.7rem;
+    letter-spacing: 0;
+    margin-top: 0.3rem;
+    color: #ea1d24;
+  }
+  .details .priceInr {
+    text-align: left;
+  }
+  .amount {
+    text-align: left;
+    font-size: 0.9rem;
+    margin: 0 0 1.6rem 0.3rem;
+  }
+  .details .buyBtn {
+    margin-right: 1rem;
+    font-size: 0.7rem;
+    padding: 5px 20px;
+    box-shadow: 0px 2px 15px rgba(242, 45, 52, 0.5);
+  }
+}

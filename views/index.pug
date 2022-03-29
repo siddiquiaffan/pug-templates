@@ -1,0 +1,33 @@
+doctype html
+html
+    head 
+        title Home
+        link(rel='stylesheet', href='styles.css')
+        link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.css", integrity='sha512-1hsteeq9xTM5CX6NsXiJu3Y/g+tj+IIwtZMtTisemEv3hx+S9ngaW4nryrNcPM4xGzINcKbwUJtojslX2KG+DQ==', crossorigin='anonymous')
+    body 
+
+        div.max-w-max.mx-auto.mb-10.mt-5
+            h1.text-blue-700.text-4xl.text-center.my-5.font-semibold Welcome!
+            p.text-center.text-gray-700 Here you can find latest deals!
+
+        ul.products
+            each product in products.filter(product => merchant ? (new URL(product.link)).hostname.split('.')[1] == merchant : true).slice(0, (limit || 8)) 
+                li.product
+                   .container.max-w-xs
+                        span.badge #{(new URL(product.link)).hostname.split('.')[1]}
+                        .imgContainer
+                            img.imgFruit(src=product.image alt='')
+                        .details
+                            .name
+                                h5=product.name.substr(0,100)
+                            .priceBtn
+                                .pricebtn 
+                                    .properties
+                                        span.priceInr
+                                            span.amount= '₹' + product.price 
+                                    .btnContainer
+                                        a(href=product.link, target="_blank")
+                                            button.buyBtn Buy Now
+
+
+        //- script(src='https://cdn.tailwindcss.com')
