@@ -30,13 +30,13 @@ html
                     each post in posts
                         .rounded.overflow-hidden.shadow-lg(class='w-3/4 lg:w-full mx-auto' href='#')
                             a(href=post.url || '#')
-                                .relative
-                                    img.w-full(src=post.image alt='Post image' class='w-3/4 lg:w-full mx-auto' )
-                                    .transition.duration-300.absolute.bottom-0.top-0.right-0.left-0.bg-gray-900.opacity-25(class='hover:bg-transparent')
-                                    a(href='!#')
-                                        .text-sm.absolute.top-0.right-0.bg-indigo-600.px-4.text-white.rounded-full.h-16.w-16.flex.flex-col.items-center.justify-center.mt-3.mr-3.transition.duration-500.ease-in-out(class='hover:bg-white hover:text-indigo-600')
-                                            span.font-bold 27
-                                            small March
+                                div(class='w-full')
+                                    if (post.image && post.image != '')
+                                        .relative
+                                            img.w-full.max-h-full.max-w-full.mx-auto.my-2(src=post.image alt='Post image' class='mx-auto' )
+                                            .transition.duration-300.absolute.bottom-0.top-0.right-0.left-0.bg-gray-900.opacity-10(class='hover:bg-transparent')
+                                    else 
+                                        div.h-32
                             .px-6.py-4
                                 a.font-semibold.text-lg.inline-block.transition.duration-500.ease-in-out(href='#' class='hover:text-indigo-600') #{post.title}
                                 p.text-gray-500.text-sm #{post.description}
@@ -48,4 +48,4 @@ html
                                             path(d='M256,0C114.837,0,0,114.837,0,256s114.837,256,256,256s256-114.837,256-256S397.163,0,256,0z M277.333,256\
                                             c0,11.797-9.536,21.333-21.333,21.333h-85.333c-11.797,0-21.333-9.536-21.333-21.333s9.536-21.333,21.333-21.333h64v-128\
                                             c0-11.797,9.536-21.333,21.333-21.333s21.333,9.536,21.333,21.333V256z')
-                                    span.ml-1 6 mins ago
+                                    span.ml-1 #{post.time}

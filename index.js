@@ -2,6 +2,9 @@ const express = require('express')
 const pug = require('pug')
 const {products} = require('./utils.js')
 const path = require('path')
+const axios = require('axios')
+const { atob } = require('abab')
+const moment = require('moment')
 
 const app = express()
 const port = process.env.PORT || 8000
@@ -16,27 +19,24 @@ app.get('/', (req, res) => {
     res.render('index', {products, limit, merchant})
 })
 
-const posts = [
-    {
-        title: 'Laborum esse dolor ea dolor fugiat Lorem minim eu nostrud voluptate.',
-        description: 'Commodo cupidatat enim eu adipisicing non amet sit sunt sunt. Nostrud ipsum elit reprehenderit exercitation.',
-        image: 'https://source.unsplash.com/1600x900/?computer-software,engineering,software-development,computer-engineering'
-    },
-    {
-        title: 'Minim excepteur et nostrud reprehenderit proident aute non et.',
-        description: 'Tempor ea dolore officia non magna. Ut ullamco exercitation voluptate officia ea velit tempor excepteur ullamco enim nostrud consectetur commodo.',
-        image: 'https://source.unsplash.com/1600x900/?engineering,software-development,computer-software,computer-engineering'
-    },
-    {
-        title: 'Cupidatat eiusmod eiusmod eiusmod eiusmod.',
-        description: 'Enim voluptate in laborum consequat cillum cillum labore fugiat mollit. Consequat amet velit aliqua enim eu sunt elit.',
-        image: 'https://source.unsplash.com/1600x900/?blogpost,post,website'
-    }
-]
+const extractValue = (post, key) => post.TagSet.filter(p => p.Key == key)[0]?.Value || ''
 
-app.get('/blog/:id', (req, res) => {
-    const postList = [...posts, ...posts]
-    res.render('blog'+req.params.id, {tags: ['one', 'two', 'three'], posts: postList})
+app.get('/blog/:id', async (req, res) => {
+    const response = await axios.get('https://api.pretzelbox.cc/p/blog', {
+        headers: {
+            origin: 'https://pretzelbox.cc/'
+        }
+    });
+    let posts = response.data["blog@pretzelbox.cc"]?.map(post => {
+        const blogPost = {
+            title: atob(extractValue(post, "subjectBase64")),
+            description: atob(extractValue(post, "previewBase64")),
+            image: post.attachments[0]?.location,
+            time: moment(Number(extractValue(post, "date")) * 1000).fromNow()
+        }
+        return blogPost
+    })
+    res.render('blog'+req.params.id, {tags: [], posts})
 })
 
 app.listen(port, (err) => console.log(err || 'Listen on port ' + port))
