@@ -674,7 +674,7 @@ Ensure the default browser behavior of the `hidden` attribute.
   line-height: 2.25rem;
   font-weight: 700;
   --tw-text-opacity: 1;
-  color: rgb(243 244 246 / var(--tw-text-opacity));
+  color: rgb(31 41 55 / var(--tw-text-opacity));
 }
 
 #postContainer #postContent div font[size="4"] {
@@ -682,7 +682,7 @@ Ensure the default browser behavior of the `hidden` attribute.
   line-height: 2rem;
   font-weight: 700;
   --tw-text-opacity: 1;
-  color: rgb(243 244 246 / var(--tw-text-opacity));
+  color: rgb(31 41 55 / var(--tw-text-opacity));
 }
 
 #postContainer #postContent div font[size="3"] {
@@ -690,7 +690,7 @@ Ensure the default browser behavior of the `hidden` attribute.
   line-height: 1.75rem;
   font-weight: 700;
   --tw-text-opacity: 1;
-  color: rgb(243 244 246 / var(--tw-text-opacity));
+  color: rgb(31 41 55 / var(--tw-text-opacity));
 }
 
 #postContainer #postContent div font[size="2"] {
@@ -698,7 +698,7 @@ Ensure the default browser behavior of the `hidden` attribute.
   line-height: 1.75rem;
   font-weight: 700;
   --tw-text-opacity: 1;
-  color: rgb(243 244 246 / var(--tw-text-opacity));
+  color: rgb(31 41 55 / var(--tw-text-opacity));
 }
 
 #postContainer #postContent div font[size="1"] {
@@ -706,7 +706,7 @@ Ensure the default browser behavior of the `hidden` attribute.
   line-height: 1.5rem;
   font-weight: 700;
   --tw-text-opacity: 1;
-  color: rgb(243 244 246 / var(--tw-text-opacity));
+  color: rgb(31 41 55 / var(--tw-text-opacity));
 }
 
 #postContainer #postContent div img {
