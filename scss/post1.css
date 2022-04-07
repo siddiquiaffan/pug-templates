@@ -1,0 +1,106 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+#postContainer {
+  @apply lg:w-10/12 w-full lg:px-36 px-5 lg:py-5 py-5;
+}
+
+#postContainer #postContent div h1 {
+  @apply text-3xl font-bold leading-tight text-gray-100 md:text-4xl md:font-medium md:mb-4;
+}
+
+#postContainer #postContent div h2 {
+  @apply text-2xl font-bold leading-tight text-gray-100 md:text-3xl md:font-medium md:mb-4;
+}
+
+#postContainer #postContent div h3 {
+  @apply text-xl font-bold leading-tight text-gray-100 md:text-2xl md:font-medium md:mb-4;
+}
+
+#postContainer #postContent div h4 {
+  @apply text-lg font-bold leading-tight text-gray-100 md:text-xl md:font-medium md:mb-4;
+}
+
+#postContainer #postContent div p {
+  @apply text-base text-gray-300 my-4 md:ml-3 md:text-lg md:mb-4 break-normal break-words;
+}
+
+#postContainer #postContent div b {
+  @apply font-bold;
+}
+
+#postContainer #postContent div u {
+  @apply underline-offset-2;
+}
+
+#postContainer #postContent div i {
+  @apply italic;
+}
+
+#postContainer #postContent div mark {
+  @apply py-1 px-3 my-2 rounded;
+}
+
+#postContainer #postContent div a {
+  @apply text-blue-500 hover:text-blue-800 hover:underline hover:underline-offset-2;
+}
+
+#postContainer #postContent div font[face="arial black, sans-serif"] {
+  @apply text-gray-100 font-bold;
+}
+
+#postContainer #postContent div font[face="monospace"] {
+  @apply text-base text-gray-200;
+}
+
+#postContainer #postContent div font[face="arial, sans-serif"] > b {
+  @apply text-gray-100 font-bold;
+}
+
+#postContainer #postContent div font[size="6"] {
+  @apply text-3xl text-gray-100 font-bold;
+}
+
+#postContainer #postContent div img {
+  max-width: 100%;
+  max-height: 60vh;
+  @apply object-contain mt-12 mb-10 rounded-lg mx-auto;
+}
+
+#postContainer #postContent div ul,
+#postContainer #postContent div ol {
+  @apply list-disc ml-2 md:ml-8 my-5;
+}
+
+#postContainer #postContent div table {
+  @apply w-full my-8 rounded-lg text-gray-100 bg-gray-800;
+}
+
+#postContainer #postContent div table thead {
+  @apply bg-gray-800 rounded-t-lg;
+}
+
+#postContainer #postContent div table thead th {
+  @apply py-3 px-6 text-xs font-bold tracking-wider text-left uppercase;
+}
+
+#postContainer #postContent div table tbody tr:nth-child(1) {
+  @apply bg-gray-800 rounded-t-lg;
+}
+
+#postContainer #postContent div table tbody tr:nth-child(1) td {
+  @apply py-3 px-6 text-xs font-bold tracking-wider text-left uppercase;
+}
+
+#postContainer #postContent div table tbody tr {
+  @apply border-b border-gray-400;
+}
+
+#postContainer #postContent div table tbody tr:hover {
+  @apply bg-gray-500 cursor-pointer;
+}
+
+#postContainer #postContent div table tbody tr td {
+  @apply px-6 py-4 text-sm text-gray-100;
+}
+/*# sourceMappingURL=post1.css.map */

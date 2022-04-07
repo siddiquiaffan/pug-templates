@@ -1,0 +1,206 @@
+{
+  "attachments": [
+    {
+      "type": "attachment",
+      "contentType": "image/jpeg",
+      "partId": "2",
+      "release": null,
+      "contentDisposition": "inline",
+      "filename": "little-girl-gad1ca2aa9_640.jpg",
+      "contentId": "<ii_l1dgj43x3>",
+      "cid": "ii_l1dgj43x3",
+      "related": true,
+      "headers": {},
+      "checksum": "4c8fc9c9c8c02c9d8ad640649f40ac5b",
+      "size": 99447,
+      "contentLocation": "blog/6ikh3mv/little-girl-gad1ca2aa9_640.jpg",
+      "wasInlined": true
+    },
+    {
+      "type": "attachment",
+      "contentType": "image/png",
+      "partId": "3",
+      "release": null,
+      "contentDisposition": "inline",
+      "filename": "pretzelbox-lighthouse-page-speed-95.png",
+      "contentId": "<ii_l1dgjs4j4>",
+      "cid": "ii_l1dgjs4j4",
+      "related": true,
+      "headers": {},
+      "checksum": "9f9d9a9ec758dabedb08f5ba77e040d3",
+      "size": 116683,
+      "contentLocation": "blog/6ikh3mv/pretzelbox-lighthouse-page-speed-95.png",
+      "wasInlined": true
+    },
+    {
+      "type": "attachment",
+      "contentType": "image/png",
+      "partId": "4",
+      "release": null,
+      "contentDisposition": "inline",
+      "filename": "hashnode-lighthouse-page-speed-69.png",
+      "contentId": "<ii_l1dgk5oa5>",
+      "cid": "ii_l1dgk5oa5",
+      "related": true,
+      "headers": {},
+      "checksum": "08818c40bf4335305433b0f7c63df152",
+      "size": 125367,
+      "contentLocation": "blog/6ikh3mv/hashnode-lighthouse-page-speed-69.png",
+      "wasInlined": true
+    },
+    {
+      "type": "attachment",
+      "contentType": "image/png",
+      "partId": "5",
+      "release": null,
+      "contentDisposition": "inline",
+      "filename": "twitter-card-validator.png",
+      "contentId": "<ii_l1dgkjha6>",
+      "cid": "ii_l1dgkjha6",
+      "related": true,
+      "headers": {},
+      "checksum": "24e2a016095ddb381d1c9480f0de9575",
+      "size": 1477402,
+      "contentLocation": "blog/6ikh3mv/twitter-card-validator.png",
+      "wasInlined": true
+    }
+  ],
+  "headers": {},
+  "headerLines": [
+    {
+      "key": "return-path",
+      "line": "Return-Path: <0100017fda7e8f3a-500108c5-92f3-4963-af1e-b7a07feb9af4-000000@amazonses.com>"
+    },
+    {
+      "key": "received",
+      "line": "Received: from a8-242.smtp-out.amazonses.com (a8-242.smtp-out.amazonses.com [54.240.8.242])\r\n by inbound-smtp.us-east-1.amazonaws.com with SMTP id 6ikh3mvsaliak8g8ao7jtvqsbiuvtaoujmpi27o1\r\n for blog@pretzelbox.cc;\r\n Wed, 30 Mar 2022 11:03:22 +0000 (UTC)"
+    },
+    {
+      "key": "x-ses-spam-verdict",
+      "line": "X-SES-Spam-Verdict: PASS"
+    },
+    {
+      "key": "x-ses-virus-verdict",
+      "line": "X-SES-Virus-Verdict: PASS"
+    },
+    {
+      "key": "received-spf",
+      "line": "Received-SPF: pass (spfCheck: domain of amazonses.com designates 54.240.8.242 as permitted sender) client-ip=54.240.8.242; envelope-from=0100017fda7e8f3a-500108c5-92f3-4963-af1e-b7a07feb9af4-000000@amazonses.com; helo=a8-242.smtp-out.amazonses.com;"
+    },
+    {
+      "key": "authentication-results",
+      "line": "Authentication-Results: amazonses.com;\r\n spf=pass (spfCheck: domain of amazonses.com designates 54.240.8.242 as permitted sender) client-ip=54.240.8.242; envelope-from=0100017fda7e8f3a-500108c5-92f3-4963-af1e-b7a07feb9af4-000000@amazonses.com; helo=a8-242.smtp-out.amazonses.com;\r\n dkim=pass header.i=@amazonses.com;\r\n dkim=pass header.i=@pretzelbox.cc;\r\n dmarc=none header.from=pretzelbox.cc;"
+    },
+    {
+      "key": "x-ses-receipt",
+      "line": "X-SES-RECEIPT: AEFBQUFBQUFBQUFHZ0RZT0VzUFkwU1V6elA5Ukd1MDgvWWlXWXRvdXRhd3JIRjZxS1FrZkpOemJPM2dxemQ1U0psdXZBNjdiWnFKRjdiOEE5c0xvVjlXMjZGSjdROEZUa1gwV3NrTTJIYndXOWJ5SW4zQ2FhYmRISUE1elFNSTF4ZlE5dmNjQWpPeUVWelM0KzR5dFNFNVpsUDI4OTFjRHczK1NJYVdtMjhKRWplclJNbmxsdXBsU2hZMGY2N3Y1WGthNDY0VksxS1ZKRDBjSkZpSnUreSs5OGpNODQ4cU5rZHJPazN1K3dhc0tRdUp4cGJzU2FUbzc1NUdiSFR1Nkw3MXZuLzNNdjFwRWlrZW9zRUwyMitCVlYzemxBODY2OUZLSDBiTTcxOFVkMU15cXU4S3hVaTdDQnA1d3d0bE1uK1czY0s0bk9TUTNzQ3VQbm5xWUhkWHJlOXJJaGt2b3VrOS9PSStDdnRsMDdsMHJrelVnOVF3PT0="
+    },
+    {
+      "key": "x-ses-dkim-signature",
+      "line": "X-SES-DKIM-SIGNATURE: a=rsa-sha256; q=dns/txt; b=C1hdwdfY+yIKeVZ4E9K8RWTG1Xq3K7aI9nZQOQeeDDeuh2TWpbp8+qHFxpDrdkfDj8iH3ayu7kKLeBcf1AaGHIXqa3WH76Rd2W74rACKUQh/qUuWxflfcTtWAv8cc0feVJc9C4z3lMBEkVx2s1CbVjQ18Hl3PNjI9qMLcyrh2xY=; c=relaxed/simple; s=6gbrjpgwjskckoa6a5zn6fwqkn67xbtw; d=amazonses.com; t=1648638203; v=1; bh=fp8eib9Gqy1mZ3P7GaanYq7PGyujoxcI8KO1++iCTlk=; h=From:To:Cc:Bcc:Subject:Date:Message-ID:MIME-Version:Content-Type:X-SES-RECEIPT;"
+    },
+    {
+      "key": "dkim-signature",
+      "line": "DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/simple;\r\n\ts=3nsu5ykrpopvzh3jqxsd5m6mqui5op3d; d=pretzelbox.cc; t=1648638202;\r\n\th=MIME-Version:From:Date:Message-ID:Subject:To:Content-Type;\r\n\tbh=fp8eib9Gqy1mZ3P7GaanYq7PGyujoxcI8KO1++iCTlk=;\r\n\tb=YcDNqQOFS/EWVLq7S0QPmME4u2MNOSD+6D/4kVQPrNWCtG/liu7LyplfPf1rEwxU\r\n\tqVhDZZWw4Bn93VL07DhPi4b52cw9my8Vf5KIdWS+Z2+ActoQbmC9lRIas6w82HAEDl3\r\n\tcjPo0AcaPde9KnPfNTERtsRoEAYBq8hLVTIhxukE1v1JnNFoFSzk4ATr5UlzkSHaxsJ\r\n\tVppnDaRJf1VPrjaBDQUjzQmdPwP4tiGSh9ThLL6006Lp1AX1ECYeq6nUMp978qfyznJ\r\n\t3nmjr3wQhondE0RFdyc2AoQ7EsqUKITBConhfYcSmMoCuWRyacaaQO/8fKGFL2VM6BK\r\n\tbOpAuu+FiA=="
+    },
+    {
+      "key": "dkim-signature",
+      "line": "DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/simple;\r\n\ts=6gbrjpgwjskckoa6a5zn6fwqkn67xbtw; d=amazonses.com; t=1648638202;\r\n\th=MIME-Version:From:Date:Message-ID:Subject:To:Content-Type:Feedback-ID;\r\n\tbh=fp8eib9Gqy1mZ3P7GaanYq7PGyujoxcI8KO1++iCTlk=;\r\n\tb=VFRNb6awk5ktsNrcbs0pUUwby0T6KZ+qyAyxvUBy2q1+kKXEUio/Kim4MFemLe1Z\r\n\t0CCCX3hfMGq6NUEafYG5ncCxm0rFeIxNU6hWXKWp3Bmjr8tz4qFvFetiH0+b0nm3sxe\r\n\ty9NOoKFNp+ccY4N3P65+aRv/2Dny0pMBny4hqYoI="
+    },
+    {
+      "key": "x-gm-message-state",
+      "line": "X-Gm-Message-State: AOAM532pCJmtM/j2OV69VJtBykpeiMJySWnts1EIJRLa+hQE6PXP1ToZ\r\n\t4kI4QZMRZ70vlPEJedssMfiiqbHfa5VFBdLowjw="
+    },
+    {
+      "key": "x-google-smtp-source",
+      "line": "X-Google-Smtp-Source: ABdhPJxHWlfrg6qlZRSxC+sXrIwYs9LwpxG/ETo+mWZ9UKSzu0K6oEgoitUASl7waSvvEtmNXzCnOpDwyfTyE9YFOA4="
+    },
+    {
+      "key": "x-received",
+      "line": "X-Received: by 2002:a05:6402:649:b0:41b:71d8:9594 with SMTP id\r\n u9-20020a056402064900b0041b71d89594mr70849edx.371.1648638198574; Wed, 30 Mar\r\n 2022 04:03:18 -0700 (PDT)"
+    },
+    {
+      "key": "mime-version",
+      "line": "MIME-Version: 1.0"
+    },
+    {
+      "key": "from",
+      "line": "From: \"Sai @ pretzelbox\" <sai@pretzelbox.cc>"
+    },
+    {
+      "key": "date",
+      "line": "Date: Wed, 30 Mar 2022 11:03:21 +0000"
+    },
+    {
+      "key": "x-gmail-original-message-id",
+      "line": "X-Gmail-Original-Message-ID: <CA+E4xrs2EZsQzz5gAw6hyooFV6=g_wkO7WxhMXOF4DDaW9dh3A@mail.gmail.com>"
+    },
+    {
+      "key": "message-id",
+      "line": "Message-ID: <0100017fda7e8f3a-500108c5-92f3-4963-af1e-b7a07feb9af4-000000@email.amazonses.com>"
+    },
+    {
+      "key": "subject",
+      "line": "Subject: PretzelBox: a non-WordPress, non-JAMStack blogging platform"
+    },
+    {
+      "key": "to",
+      "line": "To: blog@pretzelbox.cc"
+    },
+    {
+      "key": "content-type",
+      "line": "Content-Type: multipart/related; boundary=\"00000000000030d4b605db6d7e03\""
+    },
+    {
+      "key": "feedback-id",
+      "line": "Feedback-ID: 1.us-east-1.qnHO9qQTTY1JtZ6OduAUaIzhQrY5s4R8KxpDURO+C0I=:AmazonSES"
+    },
+    {
+      "key": "x-ses-outgoing",
+      "line": "X-SES-Outgoing: 2022.03.30-54.240.8.242"
+    }
+  ],
+  "html": "<div dir=\"ltr\">If you stop the average person on the street and ask them to name a blogging platform, they are going to say WordPress. If you repeat this exercise&nbsp;in Bangalore or Silicon Valley, they might surprise you by naming Gatsby, Hugo, or Medium.<div><br></div><div>Well, in my neck of the woods - which is neither Bangalore nor full of average people - the answer is going to be <font face=\"arial black, sans-serif\">PretzelBox</font>.&nbsp;</div><div><br></div><div><br></div><blockquote class=\"gmail_quote\">I kid, I kid! No one knows about PretzelBox except you, dear reader, my wife, and I.</blockquote><div><br></div><div><br></div><div>But if I have namechecked products like WordPress, Gatsby, Hugo, and Medium, I should at least make an effort to compare and contrast PretzelBox with them.</div><div><br></div><div><img src=\"https://pretzelbox.cc/blog/6ikh3mv/little-girl-gad1ca2aa9_640.jpg\" alt=\"little-girl-gad1ca2aa9_640.jpg\" width=\"562\" height=\"374\"><br></div><div><font size=\"1\"><i>Courtesy: <a href=\"https://pixabay.com/photos/little-girl-happiness-happy-joy-2252145/\">Pixabay</a></i></font></div><div><br></div><div><font size=\"6\">Driven By Gmail</font></div><div>Blogging is fun but writing blog posts is not fun..at all. With PretzelBox, we have simplified the worst part of blogging i.e., composing the blog post. &nbsp;</div><div><br></div><div>You don't have to navigate an unfamiliar&nbsp;editor nor learn an entire new syntax to compose beautiful posts right inside your Gmail inbox.&nbsp;</div><div><br></div><div>🚫&nbsp;No more WordPress Blocks or GutenBerg<br></div><div>🚫&nbsp;No more Markdown</div><div><br></div><div>❤&nbsp;If you know how to format your emails in Gmail, you can write beautiful blog posts in PretzelBox. It's that simple.&nbsp;❤<br></div><div><br></div><div><div><font size=\"6\">Blazing Fast</font></div><div>The world wants information quickly and PretzelBox is happy to oblige. You don't have to take our word for it. Here is the Lighthouse page score for a <a href=\"https://pretzelbox.cc/blog/writing-beautiful-blog-posts-in-gmail--hofshrt.html\">PretzelBox blog post</a> as reported by Google&nbsp;💪.&nbsp;</div></div><div><br></div><div><br></div><img src=\"https://pretzelbox.cc/blog/6ikh3mv/pretzelbox-lighthouse-page-speed-95.png\" alt=\"pretzelbox-lighthouse-page-speed-95.png\" width=\"562\" height=\"209\"><br><div><br></div><div>In comparison, here is a blog hosted on HashNode which scores 69. Nice!&nbsp;🤒</div><div><br></div><div><br></div><img src=\"https://pretzelbox.cc/blog/6ikh3mv/hashnode-lighthouse-page-speed-69.png\" alt=\"hashnode-lighthouse-page-speed-69.png\" width=\"562\" height=\"209\"><br><div><br></div><div><br></div><div>PretzelBox's performance out of the gate far outstrips its competition in these speed tests.</div><div><br></div><div><font size=\"6\">SEO and Social Sharing Friendly</font></div><div>Social sharing - i.e., posting and sharing links on social media - and SEO are critical to getting&nbsp;posts seen and shared widely. PretzelBox blog posts are fully tagged and enriched to help crawlers and mini-browsers make the most sense of the content in order to drive engagement and eyeballs.</div><div><br></div><div>For example, this is how Twitter sees our&nbsp;post. It was able to correctly detect the post title, description, and featured image making the content more appealing to viewers.</div><div><br></div><div>🚫&nbsp;WordPress blogs need extra plugins like Yoast to make them SEO and sharing friendly</div><div>🚫&nbsp;SPA blogs have serious issues with SEO and social sharing&nbsp;<br></div><div>🚫&nbsp;JAMStack blogs need special formatting to make posts SEO and social sharing friendly<br></div><div><br></div><div>❤&nbsp;PretzelBox handles all this out of the box.&nbsp;❤<br></div><div><br></div><div><br></div><img src=\"https://pretzelbox.cc/blog/6ikh3mv/twitter-card-validator.png\" alt=\"twitter-card-validator.png\" width=\"562\" height=\"309\"><br><div><br></div><div><br></div><div><font size=\"6\">Platform Agnostic</font></div><div>PretzelBox blogs are completely platform and technology&nbsp;agnostic. It is <a href=\"https://pretzelbox.cc/blog/the-blog-api--28j9jh7.html\">entirely</a>&nbsp;<a href=\"https://pretzelbox.cc/blog/the-post-api--ims0or7.html\">API</a> driven so you are free to choose whatever&nbsp;technology you want to&nbsp;display blog&nbsp;posts. In fact, if you already work with a designer, you can even ask them to create&nbsp;<b>.pug</b> files which can be used to customize your blog to match your exact needs.</div><div><br></div><div><div>🚫&nbsp;WordPress runs on php so you need specialist developers to enhance your blog</div><div>🚫&nbsp;SPA blogs run on Nodejs, once again requiring specialized knowledge<br></div><div>🚫&nbsp;JAMStack blogs run on Nodejs, once again requiring specialized knowledge<br></div><div><br></div><div>❤&nbsp;PretzelBox is API&nbsp;first. Bring your own developer/designer to&nbsp;help you build the blog of your&nbsp;dreams.&nbsp;❤</div></div><div><br></div><div><br></div><div><font size=\"6\">Conclusion</font></div><div>Try PretzelBox. It is like a breath of crisp, clean air in the muggy, oppressive world of blogging.</div></div>\n",
+  "text": "If you stop the average person on the street and ask them to name a\nblogging platform, they are going to say WordPress. If you repeat this\nexercise in Bangalore or Silicon Valley, they might surprise you by naming\nGatsby, Hugo, or Medium.\n\nWell, in my neck of the woods - which is neither Bangalore nor full of\naverage people - the answer is going to be PretzelBox.\n\n\nI kid, I kid! No one knows about PretzelBox except you, dear reader, my\n> wife, and I.\n\n\n\nBut if I have namechecked products like WordPress, Gatsby, Hugo, and\nMedium, I should at least make an effort to compare and contrast PretzelBox\nwith them.\n\n[image: little-girl-gad1ca2aa9_640.jpg]\n*Courtesy: Pixabay\n<https://pixabay.com/photos/little-girl-happiness-happy-joy-2252145/>*\n\nDriven By Gmail\nBlogging is fun but writing blog posts is not fun..at all. With PretzelBox,\nwe have simplified the worst part of blogging i.e., composing the blog\npost.\n\nYou don't have to navigate an unfamiliar editor nor learn an entire new\nsyntax to compose beautiful posts right inside your Gmail inbox.\n\n🚫 No more WordPress Blocks or GutenBerg\n🚫 No more Markdown\n\n❤ If you know how to format your emails in Gmail, you can write beautiful\nblog posts in PretzelBox. It's that simple. ❤\n\nBlazing Fast\nThe world wants information quickly and PretzelBox is happy to oblige. You\ndon't have to take our word for it. Here is the Lighthouse page score\nfor a PretzelBox\nblog post\n<https://pretzelbox.cc/blog/writing-beautiful-blog-posts-in-gmail--hofshrt.html>\nas reported by Google 💪.\n\n\n[image: pretzelbox-lighthouse-page-speed-95.png]\n\nIn comparison, here is a blog hosted on HashNode which scores 69. Nice! 🤒\n\n\n[image: hashnode-lighthouse-page-speed-69.png]\n\n\nPretzelBox's performance out of the gate far outstrips its competition in\nthese speed tests.\n\nSEO and Social Sharing Friendly\nSocial sharing - i.e., posting and sharing links on social media - and SEO\nare critical to getting posts seen and shared widely. PretzelBox blog posts\nare fully tagged and enriched to help crawlers and mini-browsers make the\nmost sense of the content in order to drive engagement and eyeballs.\n\nFor example, this is how Twitter sees our post. It was able to correctly\ndetect the post title, description, and featured image making the content\nmore appealing to viewers.\n\n🚫 WordPress blogs need extra plugins like Yoast to make them SEO and\nsharing friendly\n🚫 SPA blogs have serious issues with SEO and social sharing\n🚫 JAMStack blogs need special formatting to make posts SEO and social\nsharing friendly\n\n❤ PretzelBox handles all this out of the box. ❤\n\n\n[image: twitter-card-validator.png]\n\n\nPlatform Agnostic\nPretzelBox blogs are completely platform and technology agnostic. It is\nentirely <https://pretzelbox.cc/blog/the-blog-api--28j9jh7.html> API\n<https://pretzelbox.cc/blog/the-post-api--ims0or7.html> driven so you are\nfree to choose whatever technology you want to display blog posts. In fact,\nif you already work with a designer, you can even ask them to create *.pug*\nfiles which can be used to customize your blog to match your exact needs.\n\n🚫 WordPress runs on php so you need specialist developers to enhance your\nblog\n🚫 SPA blogs run on Nodejs, once again requiring specialized knowledge\n🚫 JAMStack blogs run on Nodejs, once again requiring specialized knowledge\n\n❤ PretzelBox is API first. Bring your own developer/designer to help you\nbuild the blog of your dreams. ❤\n\n\nConclusion\nTry PretzelBox. It is like a breath of crisp, clean air in the muggy,\noppressive world of blogging.\n",
+  "textAsHtml": "<p>If you stop the average person on the street and ask them to name a<br/>blogging platform, they are going to say WordPress. If you repeat this<br/>exercise in Bangalore or Silicon Valley, they might surprise you by naming<br/>Gatsby, Hugo, or Medium.</p><p>Well, in my neck of the woods - which is neither Bangalore nor full of<br/>average people - the answer is going to be PretzelBox.</p><p>I kid, I kid! No one knows about PretzelBox except you, dear reader, my<br/>&gt; wife, and I.</p><p>But if I have namechecked products like WordPress, Gatsby, Hugo, and<br/>Medium, I should at least make an effort to compare and contrast PretzelBox<br/>with them.</p><p>[image: little-girl-gad1ca2aa9_640.jpg]<br/>*Courtesy: Pixabay<br/>&lt;<a href=\"https://pixabay.com/photos/little-girl-happiness-happy-joy-2252145/\">https://pixabay.com/photos/little-girl-happiness-happy-joy-2252145/</a>&gt;*</p><p>Driven By Gmail<br/>Blogging is fun but writing blog posts is not fun..at all. With PretzelBox,<br/>we have simplified the worst part of blogging i.e., composing the blog<br/>post.</p><p>You don&apos;t have to navigate an unfamiliar editor nor learn an entire new<br/>syntax to compose beautiful posts right inside your Gmail inbox.</p><p>&#x1F6AB; No more WordPress Blocks or GutenBerg<br/>&#x1F6AB; No more Markdown</p><p>&#x2764; If you know how to format your emails in Gmail, you can write beautiful<br/>blog posts in PretzelBox. It&apos;s that simple. &#x2764;</p><p>Blazing Fast<br/>The world wants information quickly and PretzelBox is happy to oblige. You<br/>don&apos;t have to take our word for it. Here is the Lighthouse page score<br/>for a PretzelBox<br/>blog post<br/>&lt;<a href=\"https://pretzelbox.cc/blog/writing-beautiful-blog-posts-in-gmail--hofshrt.html\">https://pretzelbox.cc/blog/writing-beautiful-blog-posts-in-gmail--hofshrt.html</a>&gt;<br/>as reported by Google &#x1F4AA;.</p><p>[image: pretzelbox-lighthouse-page-speed-95.png]</p><p>In comparison, here is a blog hosted on HashNode which scores 69. Nice! &#x1F912;</p><p>[image: hashnode-lighthouse-page-speed-69.png]</p><p>PretzelBox&apos;s performance out of the gate far outstrips its competition in<br/>these speed tests.</p><p>SEO and Social Sharing Friendly<br/>Social sharing - i.e., posting and sharing links on social media - and SEO<br/>are critical to getting posts seen and shared widely. PretzelBox blog posts<br/>are fully tagged and enriched to help crawlers and mini-browsers make the<br/>most sense of the content in order to drive engagement and eyeballs.</p><p>For example, this is how Twitter sees our post. It was able to correctly<br/>detect the post title, description, and featured image making the content<br/>more appealing to viewers.</p><p>&#x1F6AB; WordPress blogs need extra plugins like Yoast to make them SEO and<br/>sharing friendly<br/>&#x1F6AB; SPA blogs have serious issues with SEO and social sharing<br/>&#x1F6AB; JAMStack blogs need special formatting to make posts SEO and social<br/>sharing friendly</p><p>&#x2764; PretzelBox handles all this out of the box. &#x2764;</p><p>[image: twitter-card-validator.png]</p><p>Platform Agnostic<br/>PretzelBox blogs are completely platform and technology agnostic. It is<br/>entirely &lt;<a href=\"https://pretzelbox.cc/blog/the-blog-api--28j9jh7.html\">https://pretzelbox.cc/blog/the-blog-api--28j9jh7.html</a>&gt; API<br/>&lt;<a href=\"https://pretzelbox.cc/blog/the-post-api--ims0or7.html\">https://pretzelbox.cc/blog/the-post-api--ims0or7.html</a>&gt; driven so you are<br/>free to choose whatever technology you want to display blog posts. In fact,<br/>if you already work with a designer, you can even ask them to create *.pug*<br/>files which can be used to customize your blog to match your exact needs.</p><p>&#x1F6AB; WordPress runs on php so you need specialist developers to enhance your<br/>blog<br/>&#x1F6AB; SPA blogs run on Nodejs, once again requiring specialized knowledge<br/>&#x1F6AB; JAMStack blogs run on Nodejs, once again requiring specialized knowledge</p><p>&#x2764; PretzelBox is API first. Bring your own developer/designer to help you<br/>build the blog of your dreams. &#x2764;</p><p>Conclusion<br/>Try PretzelBox. It is like a breath of crisp, clean air in the muggy,<br/>oppressive world of blogging.</p>",
+  "subject": "PretzelBox: a non-WordPress, non-JAMStack blogging platform",
+  "date": "2022-03-30T11:03:21.000Z",
+  "to": {
+    "value": [
+      {
+        "address": "blog@pretzelbox.cc",
+        "name": ""
+      }
+    ],
+    "html": "<span class=\"mp_address_group\"><a href=\"mailto:blog@pretzelbox.cc\" class=\"mp_address_email\">blog@pretzelbox.cc</a></span>",
+    "text": "blog@pretzelbox.cc"
+  },
+  "from": {
+    "value": [
+      {
+        "address": "sai@pretzelbox.cc",
+        "name": "Sai @ pretzelbox"
+      }
+    ],
+    "html": "<span class=\"mp_address_group\"><span class=\"mp_address_name\">Sai @ pretzelbox</span> &lt;<a href=\"mailto:sai@pretzelbox.cc\" class=\"mp_address_email\">sai@pretzelbox.cc</a>&gt;</span>",
+    "text": "Sai @ pretzelbox <sai@pretzelbox.cc>"
+  },
+  "messageId": "<0100017fda7e8f3a-500108c5-92f3-4963-af1e-b7a07feb9af4-000000@email.amazonses.com>",
+  "matchedRule": {
+    "type": "BLOG",
+    "to": "blog@pretzelbox.cc",
+    "saveToBucket": "pb-clients",
+    "prefix": "blog/",
+    "attachmentsLocation": "",
+    "allowed_from": "sai@pretzelbox.cc",
+    "substringLength": "7",
+    "response": "REPLY, STACK",
+    "url": "https://pretzelbox.cc/",
+    "template": "pb-cdn-file-received",
+    "reply-from-name": "no-reply",
+    "reply-from-email": "no-reply@pretzelbox.cc",
+    "blogsListTemplateFileUrl": "https://pretzelbox.cc/blogs-list.pug",
+    "blogFromTemplateFile": "https://pretzelbox.cc/blog-post.pug",
+    "matchedToEmail": "blog@pretzelbox.cc"
+  }
+}
