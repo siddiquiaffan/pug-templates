@@ -6,6 +6,7 @@ const axios = require("axios");
 const { atob } = require("abab");
 const moment = require("moment");
 const fs = require("fs");
+const html2pug = require("html2pug");
 
 const app = express();
 const port = process.env.PORT || 8000;
@@ -34,6 +35,7 @@ const getPosts = async () => {
       description: atob(extractValue(post, "previewBase64")),
       image: post.attachments[0]?.location,
       time: moment(Number(extractValue(post, "date")) * 1000).fromNow(),
+      slug: post.emlId,
     };
     return blogPost;
   });
@@ -42,7 +44,7 @@ const getPosts = async () => {
 const getPost = async (slug) => {
   try {
     const response = await axios.get(
-      "https://api.pretzelbox.cc/p/post?slug=" + (slug || "28j9jh7"),
+      "https://api.pretzelbox.cc/p/post?slug=" + slug,
       {
         headers: {
           origin: "https://pretzelbox.cc",
@@ -67,6 +69,7 @@ app.get("/post/:id", async (req, res) => {
   res.render("post" + req.params.id, {
     tags: [],
     post: await getPost(req.query.slug),
+    html2pug,
   });
 });
 

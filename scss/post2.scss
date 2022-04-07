@@ -37,6 +37,16 @@
       a {
         @apply text-blue-500 hover:text-blue-800 hover:underline hover:underline-offset-2;
       }
+      blockquote,
+      blockquote.gmail_quote {
+        @apply text-gray-500 ml-5;
+      }
+      blockquote::before,
+      blockquote.gmail_quote::before {
+        @apply content-center content-start text-gray-700 text-3xl;
+        content: "“";
+        line-height: 1;
+      }
       font[face="arial black, sans-serif"] {
         @apply text-gray-700 font-bold;
       }
@@ -64,7 +74,7 @@
       img {
         max-width: 100%;
         max-height: 60vh;
-        @apply object-contain mt-12 mb-10 rounded-lg mx-auto;
+        @apply object-contain mt-12 mb-10 rounded-lg mx-auto shadow-md;
       }
       ul,
       ol {

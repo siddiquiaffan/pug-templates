@@ -1,3 +1,5 @@
+@charset "UTF-8";
+
 /*
 ! tailwindcss v3.0.23 | MIT License | https://tailwindcss.com
 */
@@ -423,7 +425,7 @@ Ensure the default browser behavior of the `hidden` attribute.
   display: none;
 }
 
-*, ::before, ::after {
+*, ::before, ::after{
   --tw-translate-x: 0;
   --tw-translate-y: 0;
   --tw-rotate: 0;
@@ -468,7 +470,7 @@ Ensure the default browser behavior of the `hidden` attribute.
   --tw-backdrop-sepia:  ;
 }
 
-#postContainer {
+#postContainer{
   width: 100%;
   padding-left: 1.25rem;
   padding-right: 1.25rem;
@@ -476,28 +478,28 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding-bottom: 1.25rem;
 }
 
-@media (min-width: 1024px) {
-  #postContainer {
+@media (min-width: 1024px){
+  #postContainer{
     width: 83.333333%;
   }
 
-  #postContainer {
+  #postContainer{
     padding-left: 9rem;
     padding-right: 9rem;
   }
 
-  #postContainer {
+  #postContainer{
     padding-top: 1.25rem;
     padding-bottom: 1.25rem;
   }
 }
 
-#postContainer #postContent {
+#postContainer #postContent{
   --tw-text-opacity: 1;
   color: rgb(229 231 235 / var(--tw-text-opacity));
 }
 
-#postContainer #postContent div h1 {
+#postContainer #postContent div h1{
   font-size: 1.875rem;
   line-height: 2.25rem;
   font-weight: 700;
@@ -506,22 +508,22 @@ Ensure the default browser behavior of the `hidden` attribute.
   color: rgb(243 244 246 / var(--tw-text-opacity));
 }
 
-@media (min-width: 768px) {
-  #postContainer #postContent div h1 {
+@media (min-width: 768px){
+  #postContainer #postContent div h1{
     margin-bottom: 1rem;
   }
 
-  #postContainer #postContent div h1 {
+  #postContainer #postContent div h1{
     font-size: 2.25rem;
     line-height: 2.5rem;
   }
 
-  #postContainer #postContent div h1 {
+  #postContainer #postContent div h1{
     font-weight: 500;
   }
 }
 
-#postContainer #postContent div h2 {
+#postContainer #postContent div h2{
   font-size: 1.5rem;
   line-height: 2rem;
   font-weight: 700;
@@ -530,22 +532,22 @@ Ensure the default browser behavior of the `hidden` attribute.
   color: rgb(243 244 246 / var(--tw-text-opacity));
 }
 
-@media (min-width: 768px) {
-  #postContainer #postContent div h2 {
+@media (min-width: 768px){
+  #postContainer #postContent div h2{
     margin-bottom: 1rem;
   }
 
-  #postContainer #postContent div h2 {
+  #postContainer #postContent div h2{
     font-size: 1.875rem;
     line-height: 2.25rem;
   }
 
-  #postContainer #postContent div h2 {
+  #postContainer #postContent div h2{
     font-weight: 500;
   }
 }
 
-#postContainer #postContent div h3 {
+#postContainer #postContent div h3{
   font-size: 1.25rem;
   line-height: 1.75rem;
   font-weight: 700;
@@ -554,22 +556,22 @@ Ensure the default browser behavior of the `hidden` attribute.
   color: rgb(243 244 246 / var(--tw-text-opacity));
 }
 
-@media (min-width: 768px) {
-  #postContainer #postContent div h3 {
+@media (min-width: 768px){
+  #postContainer #postContent div h3{
     margin-bottom: 1rem;
   }
 
-  #postContainer #postContent div h3 {
+  #postContainer #postContent div h3{
     font-size: 1.5rem;
     line-height: 2rem;
   }
 
-  #postContainer #postContent div h3 {
+  #postContainer #postContent div h3{
     font-weight: 500;
   }
 }
 
-#postContainer #postContent div h4 {
+#postContainer #postContent div h4{
   font-size: 1.125rem;
   line-height: 1.75rem;
   font-weight: 700;
@@ -578,22 +580,22 @@ Ensure the default browser behavior of the `hidden` attribute.
   color: rgb(243 244 246 / var(--tw-text-opacity));
 }
 
-@media (min-width: 768px) {
-  #postContainer #postContent div h4 {
+@media (min-width: 768px){
+  #postContainer #postContent div h4{
     margin-bottom: 1rem;
   }
 
-  #postContainer #postContent div h4 {
+  #postContainer #postContent div h4{
     font-size: 1.25rem;
     line-height: 1.75rem;
   }
 
-  #postContainer #postContent div h4 {
+  #postContainer #postContent div h4{
     font-weight: 500;
   }
 }
 
-#postContainer #postContent div p {
+#postContainer #postContent div p{
   margin-top: 1rem;
   margin-bottom: 1rem;
   overflow-wrap: normal;
@@ -605,34 +607,51 @@ Ensure the default browser behavior of the `hidden` attribute.
   color: rgb(209 213 219 / var(--tw-text-opacity));
 }
 
-@media (min-width: 768px) {
-  #postContainer #postContent div p {
+@media (min-width: 768px){
+  #postContainer #postContent div p{
     margin-left: 0.75rem;
   }
 
-  #postContainer #postContent div p {
+  #postContainer #postContent div p{
     margin-bottom: 1rem;
   }
 
-  #postContainer #postContent div p {
+  #postContainer #postContent div p{
     font-size: 1.125rem;
     line-height: 1.75rem;
   }
 }
 
-#postContainer #postContent div b {
+#postContainer #postContent div b{
   font-weight: 700;
 }
 
-#postContainer #postContent div u {
+#postContainer #postContent div u{
   text-underline-offset: 2px;
 }
 
-#postContainer #postContent div i {
+#postContainer #postContent div i{
   font-style: italic;
 }
 
-#postContainer #postContent div mark {
+#postContainer #postContent div blockquote, #postContainer #postContent div blockquote.gmail_quote{
+  margin-left: 1.25rem;
+  --tw-text-opacity: 1;
+  color: rgb(156 163 175 / var(--tw-text-opacity));
+}
+
+#postContainer #postContent div blockquote::before, #postContainer #postContent div blockquote.gmail_quote::before{
+  align-content: center;
+  align-content: flex-start;
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+  --tw-text-opacity: 1;
+  color: rgb(156 163 175 / var(--tw-text-opacity));
+  content: "“";
+  line-height: 1;
+}
+
+#postContainer #postContent div mark{
   margin-top: 0.5rem;
   margin-bottom: 0.5rem;
   border-radius: 0.25rem;
@@ -642,12 +661,12 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding-right: 0.75rem;
 }
 
-#postContainer #postContent div a {
+#postContainer #postContent div a{
   --tw-text-opacity: 1;
   color: rgb(59 130 246 / var(--tw-text-opacity));
 }
 
-#postContainer #postContent div a:hover {
+#postContainer #postContent div a:hover{
   --tw-text-opacity: 1;
   color: rgb(30 64 175 / var(--tw-text-opacity));
   -webkit-text-decoration-line: underline;
@@ -655,26 +674,26 @@ Ensure the default browser behavior of the `hidden` attribute.
   text-underline-offset: 2px;
 }
 
-#postContainer #postContent div font[face="arial black, sans-serif"] {
+#postContainer #postContent div font[face="arial black, sans-serif"]{
   font-weight: 700;
   --tw-text-opacity: 1;
   color: rgb(243 244 246 / var(--tw-text-opacity));
 }
 
-#postContainer #postContent div font[face="monospace"] {
+#postContainer #postContent div font[face="monospace"]{
   font-size: 1rem;
   line-height: 1.5rem;
   --tw-text-opacity: 1;
   color: rgb(229 231 235 / var(--tw-text-opacity));
 }
 
-#postContainer #postContent div font[face="arial, sans-serif"] > b {
+#postContainer #postContent div font[face="arial, sans-serif"] > b{
   font-weight: 700;
   --tw-text-opacity: 1;
   color: rgb(243 244 246 / var(--tw-text-opacity));
 }
 
-#postContainer #postContent div font[size="6"] {
+#postContainer #postContent div font[size="6"]{
   font-size: 1.875rem;
   line-height: 2.25rem;
   font-weight: 700;
@@ -682,7 +701,7 @@ Ensure the default browser behavior of the `hidden` attribute.
   color: rgb(243 244 246 / var(--tw-text-opacity));
 }
 
-#postContainer #postContent div font[size="4"] {
+#postContainer #postContent div font[size="4"]{
   font-size: 1.5rem;
   line-height: 2rem;
   font-weight: 700;
@@ -690,7 +709,7 @@ Ensure the default browser behavior of the `hidden` attribute.
   color: rgb(243 244 246 / var(--tw-text-opacity));
 }
 
-#postContainer #postContent div font[size="3"] {
+#postContainer #postContent div font[size="3"]{
   font-size: 1.25rem;
   line-height: 1.75rem;
   font-weight: 700;
@@ -698,7 +717,7 @@ Ensure the default browser behavior of the `hidden` attribute.
   color: rgb(243 244 246 / var(--tw-text-opacity));
 }
 
-#postContainer #postContent div font[size="2"] {
+#postContainer #postContent div font[size="2"]{
   font-size: 1.125rem;
   line-height: 1.75rem;
   font-weight: 700;
@@ -706,7 +725,7 @@ Ensure the default browser behavior of the `hidden` attribute.
   color: rgb(243 244 246 / var(--tw-text-opacity));
 }
 
-#postContainer #postContent div font[size="1"] {
+#postContainer #postContent div font[size="1"]{
   font-size: 1rem;
   line-height: 1.5rem;
   font-weight: 700;
@@ -724,22 +743,25 @@ Ensure the default browser behavior of the `hidden` attribute.
   border-radius: 0.5rem;
   -o-object-fit: contain;
      object-fit: contain;
+  --tw-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+  --tw-shadow-colored: 0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
-#postContainer #postContent div ul, #postContainer #postContent div ol {
+#postContainer #postContent div ul, #postContainer #postContent div ol{
   margin-top: 1.25rem;
   margin-bottom: 1.25rem;
   margin-left: 0.5rem;
   list-style-type: disc;
 }
 
-@media (min-width: 768px) {
-  #postContainer #postContent div ul, #postContainer #postContent div ol {
+@media (min-width: 768px){
+  #postContainer #postContent div ul, #postContainer #postContent div ol{
     margin-left: 2rem;
   }
 }
 
-#postContainer #postContent div table {
+#postContainer #postContent div table{
   margin-top: 2rem;
   margin-bottom: 2rem;
   width: 100%;
@@ -750,14 +772,14 @@ Ensure the default browser behavior of the `hidden` attribute.
   color: rgb(243 244 246 / var(--tw-text-opacity));
 }
 
-#postContainer #postContent div table thead {
+#postContainer #postContent div table thead{
   border-top-left-radius: 0.5rem;
   border-top-right-radius: 0.5rem;
   --tw-bg-opacity: 1;
   background-color: rgb(31 41 55 / var(--tw-bg-opacity));
 }
 
-#postContainer #postContent div table thead th {
+#postContainer #postContent div table thead th{
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
   padding-left: 1.5rem;
@@ -770,14 +792,14 @@ Ensure the default browser behavior of the `hidden` attribute.
   letter-spacing: 0.05em;
 }
 
-#postContainer #postContent div table tbody tr:nth-child(1) {
+#postContainer #postContent div table tbody tr:nth-child(1){
   border-top-left-radius: 0.5rem;
   border-top-right-radius: 0.5rem;
   --tw-bg-opacity: 1;
   background-color: rgb(31 41 55 / var(--tw-bg-opacity));
 }
 
-#postContainer #postContent div table tbody tr:nth-child(1) td {
+#postContainer #postContent div table tbody tr:nth-child(1) td{
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
   padding-left: 1.5rem;
@@ -790,19 +812,19 @@ Ensure the default browser behavior of the `hidden` attribute.
   letter-spacing: 0.05em;
 }
 
-#postContainer #postContent div table tbody tr {
+#postContainer #postContent div table tbody tr{
   border-bottom-width: 1px;
   --tw-border-opacity: 1;
   border-color: rgb(156 163 175 / var(--tw-border-opacity));
 }
 
-#postContainer #postContent div table tbody tr:hover {
+#postContainer #postContent div table tbody tr:hover{
   cursor: pointer;
   --tw-bg-opacity: 1;
   background-color: rgb(107 114 128 / var(--tw-bg-opacity));
 }
 
-#postContainer #postContent div table tbody tr td {
+#postContainer #postContent div table tbody tr td{
   padding-left: 1.5rem;
   padding-right: 1.5rem;
   padding-top: 1rem;

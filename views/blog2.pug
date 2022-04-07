@@ -29,7 +29,7 @@ html
                 div(class='grid gap-10 sm:grid-cols-1 lg:grid-cols-3')
                     each post in posts
                         .rounded.overflow-hidden.shadow-lg(class='w-3/4 lg:w-full mx-auto' href='#')
-                            a(href=post.url || '#')
+                            a(href='/post/2?slug='+post.slug || '#')
                                 div(class='w-full')
                                     if (post.image && post.image != '')
                                         .relative
@@ -38,7 +38,7 @@ html
                                     else 
                                         div.h-32
                             .px-6.py-4
-                                a.font-semibold.text-lg.inline-block.transition.duration-500.ease-in-out(href='#' class='hover:text-indigo-600') #{post.title}
+                                a.font-semibold.text-lg.inline-block.transition.duration-500.ease-in-out(href='/post/2?slug='+post.slug class='hover:text-indigo-600') #{post.title}
                                 p.text-gray-500.text-sm #{post.description}
                             .px-6.py-4.flex.flex-row.items-center
                                 span.py-1.text-sm.font-regular.text-gray-900.mr-1.flex.flex-row.items-center(href='#')

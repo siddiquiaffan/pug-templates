@@ -1,6 +1,8 @@
 - var postTitle = post.subject || 'PretzelBox BlogPost'
-- var postDescription = post.text.substr(0, 199) || "PretzelBox BlogPost"
-- var postImage = post.html.split('src=')?.[1]?.split('"')?.[0] || ''
+- var postDescription = post.text?.substr(0, 199) || "PretzelBox BlogPost"
+- var postImage = post.html?.split('src=')?.[1]?.split('"')?.[0] || ''
+- var htmlContent = post.html
+- var render = (!postTitle || !htmlContent || !post.slug)
 
 html
     head 
@@ -36,7 +38,6 @@ html
                     a.inline-block.text-sm.px-3.py-2.leading-none.border-2.border-gray-700.rounded.text-gray-700.mt-4.font-bold(href='#' class='md:ml-5 hover:border-transparent hover:text-gray-100 hover:bg-gray-700 lg:mt-0') Download
 
         div#postContainer
-            div.py-5.px-7.bg-gray-700.text-gray-100.rounded-md.shadow-lg.mb-4
+            div.py-5.px-7.bg-gray-200.text-gray-900.rounded-md.shadow-md.shadow-gray-600.mb-4
                 h1.text-2xl.font-semibold #{postTitle}
-            div#postContent
-                #{post.html}
+            div#postContent!=htmlContent

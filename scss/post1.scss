@@ -32,6 +32,16 @@
       i {
         @apply italic;
       }
+      blockquote,
+      blockquote.gmail_quote {
+        @apply text-gray-400 ml-5;
+      }
+      blockquote::before,
+      blockquote.gmail_quote::before {
+        @apply content-center content-start text-gray-400 text-3xl;
+        content: "“";
+        line-height: 1;
+      }
       mark {
         @apply py-1 px-3 my-2 rounded;
       }
@@ -65,7 +75,7 @@
       img {
         max-width: 100%;
         max-height: 60vh;
-        @apply object-contain mt-12 mb-10 rounded-lg mx-auto;
+        @apply object-contain mt-12 mb-10 rounded-lg mx-auto shadow-md;
       }
       ul,
       ol {
