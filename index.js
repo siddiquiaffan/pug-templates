@@ -31,10 +31,10 @@ const getPosts = async () => {
   });
   return response.data["blog@pretzelbox.cc"]?.map((post) => {
     const blogPost = {
-      title: atob(extractValue(post, "subjectBase64")),
-      description: atob(extractValue(post, "previewBase64")),
-      image: post.attachments[0]?.location,
-      time: moment(Number(extractValue(post, "date")) * 1000).fromNow(),
+      subject: atob(extractValue(post, "subjectBase64")),
+      preview: atob(extractValue(post, "previewBase64")),
+      attachments: post.attachments,
+      published: moment(Number(extractValue(post, "date")) * 1000).fromNow(),
       slug: post.emlId,
     };
     return blogPost;
