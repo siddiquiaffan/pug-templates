@@ -2,7 +2,7 @@ body
     .max-w-screen-xl.mx-auto.p-5(class='sm:p-10 md:p-5')
         div(class='grid gap-10 sm:grid-cols-1 lg:grid-cols-3')
             each post in posts
-                .rounded.overflow-hidden.shadow-lg(class='w-3/4 lg:w-full mx-auto')
+                .rounded.overflow-hidden.shadow-lg(class='w-full mx-auto')
                     a(href=post.read_more_link)
                         div(class='w-full lg:h-48')
                             if post.attachments && post.attachments.length > 0 && post.attachments[0].location
