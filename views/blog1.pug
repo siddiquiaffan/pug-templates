@@ -7,7 +7,7 @@ div(class="xl:px-64 px-5 w-full mx-auto")
                 li(key='{post.slug || index}' class='py-12')
                     article
                         div(class='space-y-2 xl:grid xl:grid-cols-4 xl:items-baseline xl:space-y-0')
-                            div(class='mx-5 my-auto w-10/12 md:w-1/2 lg:w-3/4 h-auto rounded-lg shadow-lg')
+                            div(class='mx-5 my-auto w-10/12 md:w-1/2 lg:w-3/4 h-auto rounded-lg')
                                 if post.attachments && post.attachments.length > 0 && post.attachments[0].location
                                   img(src=post.attachments[0].location, alt=post.attachments[0].name class='mx-5 my-auto w-10/12 md:w-1/2 lg:w-full h-auto rounded-lg shadow-lg')
                                 else
