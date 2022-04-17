@@ -2,9 +2,9 @@ div(class="xl:px-64 px-2 w-full mx-auto")
     div(class='divide-y divide-gray-700')
         div(class='space-y-2 pt-6 pb-8 md:space-y-5')
             h1(class='text-3xl font-extrabold leading-9 tracking-tight sm:text-4xl sm:leading-10 md:text-6xl md:leading-14') Latest Posts
-        ul(class='divide-y divide-gray-700 list-none')
+        ul(class='divide-y divide-gray-700 !list-none')
             each post, index in posts
-                li(key='{post.slug || index}' class='py-12')
+                li(key='{post.slug || index}' class='py-12 !list-none')
                     article
                         div(class='space-y-2 xl:grid xl:grid-cols-4 xl:items-baseline xl:space-y-0')
                             div(class='mx-5 my-auto w-10/12 md:w-1/2 lg:w-3/4 h-auto rounded-lg')
