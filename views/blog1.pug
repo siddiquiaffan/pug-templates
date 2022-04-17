@@ -1,52 +1,27 @@
-html
-    head 
-        title #{blogTitle}
-        description #{blogDescription} 
-        script(src='https://cdn.tailwindcss.com')
-    body.bg-gray-900
-        nav.flex.items-center.justify-between.flex-wrap(class='xl:px-64 px-5 md:py-12 py-6')
-            .flex.items-center.flex-shrink-0.text-gray-200.mr-6
-                svg.fill-current.h-8.w-8.mr-2(width='54' height='54' viewbox='0 0 54 54' xmlns='http://www.w3.org/2000/svg')
-                    path(d='M13.5 22.1c1.8-7.2 6.3-10.8 13.5-10.8 10.8 0 12.15 8.1 17.55 9.45 3.6.9 6.75-.45 9.45-4.05-1.8 7.2-6.3 10.8-13.5 10.8-10.8 0-12.15-8.1-17.55-9.45-3.6-.9-6.75.45-9.45 4.05zM0 38.3c1.8-7.2 6.3-10.8 13.5-10.8 10.8 0 12.15 8.1 17.55 9.45 3.6.9 6.75-.45 9.45-4.05-1.8 7.2-6.3 10.8-13.5 10.8-10.8 0-12.15-8.1-17.55-9.45-3.6-.9-6.75.45-9.45 4.05z')
-                span.font-semibold.text-2xl.tracking-tight Blog
-            div(class='inline-block lg:hidden bg-gray-700')
-                button.flex.items-center.px-3.py-2.border.rounded.text-teal-200.border-teal-400(class='hover:text-white hover:border-white')
-                    svg.fill-current.h-5.w-5(viewbox='0 0 20 20' xmlns='http://www.w3.org/2000/svg')
-                        path(d='M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z')
-            div(class='hidden lg:flex items-center')
-                div(class='lg:flex-grow')
-                a.block.mt-4.text-gray-100.font-semibold.mr-4(href='#responsive-header' class='lg:inline-block lg:mt-0 hover:text-gray-400')
-                    | Docs
-                a.block.mt-4.text-gray-100.font-semibold.mr-4(href='#responsive-header' class='lg:inline-block lg:mt-0 hover:text-gray-400')
-                    | Examples
-                a.block.mt-4.text-gray-100.font-semibold(href='#responsive-header' class='lg:inline-block lg:mt-0 hover:text-gray-400')
-                    | Blog
-                div
-                    a.inline-block.text-sm.px-4.py-2.leading-none.border.rounded.text-white.border-white.mt-4(href='#' class='md:ml-5 hover:border-transparent hover:text-gray-700 hover:bg-white lg:mt-0') Download
-
-        div(class="xl:px-64 px-5 w-full mx-auto")
-            div(class='divide-y divide-gray-700')
-                div(class='space-y-2 pt-6 pb-8 md:space-y-5')
-                    h1(class='text-3xl font-extrabold leading-9 tracking-tight text-gray-100 sm:text-4xl sm:leading-10 md:text-6xl md:leading-14') Latest Posts
-                    //- p(class='text-lg leading-7 text-gray-500') Latest posts
-                ul(class='divide-y divide-gray-700')
-                    each post in posts
-                        li(key='{slug}' class='py-12')
-                            article
-                                div(class='space-y-2 xl:grid xl:grid-cols-4 xl:items-baseline xl:space-y-0')
-                                    div(class='mx-5 my-auto w-10/12 md:w-1/2 lg:w-3/4 h-auto rounded-lg shadow-lg')
-                                        if (post.image && post.image != '')
-                                            img(src=post.image alt='image' class='mx-5 my-auto w-10/12 md:w-1/2 lg:w-full h-auto rounded-lg shadow-lg')
-                                    div(class='space-y-5 xl:col-span-3')
-                                        div(class='space-y-6')
-                                            div
-                                                span.text-gray-500 #{post.time}
-                                                h2(class='text-2xl font-bold leading-8 tracking-tight')
-                                                    a(href='/post/1?slug='+post.slug class='text-gray-100') #{post.title}
-                                                div(class='flex flex-wrap space-x-3 text-base leading-5 text-teal-500')
-                                                    each tag in tags
-                                                        a(href='#'+tag)
-                                                            p #{tag}
-                                            div(class='prose max-w-none text-gray-400') #{post.description}
-                                        div(class='text-base font-medium leading-6')
-                                            a(href='/post/1?slug='+post.slug class='text-teal-500 hover:text-teal-300' aria-label='Read') Read more &rarr;
+div(class="xl:px-64 px-5 w-full mx-auto")
+    div(class='divide-y divide-gray-700')
+        div(class='space-y-2 pt-6 pb-8 md:space-y-5')
+            h1(class='text-3xl font-extrabold leading-9 tracking-tight sm:text-4xl sm:leading-10 md:text-6xl md:leading-14') Latest Posts
+        ul(class='divide-y divide-gray-700 list-none')
+            each post, index in posts
+                li(key='{post.slug || index}' class='py-12')
+                    article
+                        div(class='space-y-2 xl:grid xl:grid-cols-4 xl:items-baseline xl:space-y-0')
+                            div(class='mx-5 my-auto w-10/12 md:w-1/2 lg:w-3/4 h-auto rounded-lg shadow-lg')
+                                if post.attachments && post.attachments.length > 0 && post.attachments[0].location
+                                  img(src=post.attachments[0].location, alt=post.attachments[0].name class='mx-5 my-auto w-10/12 md:w-1/2 lg:w-full h-auto rounded-lg shadow-lg')
+                                else
+                                  img(src='/images/default-image.png', alt='placeholder' class='mx-5 my-auto w-10/12 md:w-1/2 lg:w-full h-auto rounded-lg shadow-lg')
+                            div(class='space-y-5 xl:col-span-3')
+                                div(class='space-y-6')
+                                    div
+                                        span.text-gray-500 #{post.published}
+                                        h2(class='text-2xl font-bold leading-8 tracking-tight')
+                                            a(href=post.read_more_link class='text-gray-800') #{post.subject}
+                                        div(class='flex flex-wrap space-x-3 text-base leading-5 text-teal-500')
+                                            each tag in post.tags || []
+                                                a(href='#'+tag)
+                                                    p #{tag}
+                                    div(class='prose max-w-none text-gray-400') #{post.preview}
+                                div(class='text-base font-medium leading-6')
+                                    a(href=post.read_more_link class='text-blue-900 hover:text-pink-900' aria-label='Read') Read more &rarr;
