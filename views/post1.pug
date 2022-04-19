@@ -1,18 +1,22 @@
-- var postTitle = post.subject || 'Post Not Found'
-- var postDescription = post.text?.substr(0, 199) || "PretzelBox BlogPost"
-- var postImage = post.html?.split('src=')?.[1]?.split('"')?.[0] || ''
-- var htmlContent = post.html
-- var render = (!postTitle || !htmlContent || !post.slug)
-
 html
     head 
-        title #{postTitle}
-        meta(name="description", content=postDescription)
+        title #{subject}
+        meta(name="description", content=preview)
+        
+        // OpenGraph
+        meta(property="og:title" content=subject)
+        meta(property="og:description" content=preview)
         meta(property="og:image" content=postImage)
-        meta(property="og:title" content=postTitle)
-        meta(property="og:description" content=postDescription)
-        meta(property="og:url" content=postUrl)
+        meta(property="og:url" content=domain)
         meta(property="og:type" content="article")
+        
+        // Twitter
+        meta(property="twitter:card" content="summary_large_image")
+        meta(property="twitter:url" content=domain)
+        meta(property="twitter:title" content=subject)
+        meta(property="twitter:description" content=preview)
+        meta(property="twitter:image" content=featuredImg)
+        
         link(rel='stylesheet', href='/post1.css')
         script(src='https://cdn.tailwindcss.com')
         link(rel="stylesheet", href="https://cdn.jsdelivr.net/npm/@tailwindcss/typography@latest/dist/tailwind.min.css")
@@ -40,5 +44,5 @@ html
         
             div#postContainer
                 div.py-5.px-7.bg-gray-200.text-gray-900.rounded-md.shadow-md.shadow-gray-600.mb-4
-                    h1.text-2xl.font-semibold #{postTitle}
-                div#postContent!=htmlContent
+                    h1.text-2xl.font-semibold #{subject}
+                div#postContent!=html
